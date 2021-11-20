@@ -1,0 +1,308 @@
+body{
+  padding:0;
+  margin:0;
+}
+html.appear{
+  overflow: hidden;
+}
+#close{
+  width:65px;
+  position:absolute;
+  top:32px;
+  right:32px;
+  cursor:pointer;
+}
+#close:hover{
+  opacity:0.7;
+}
+.spmenu{
+  position:fixed;
+  top:0;
+  bottom:0;
+  z-index: 12;
+  width:100%;
+  display:flex;
+  opacity:0;
+  pointer-events: none;
+}
+.spmenu.appear{
+  opacity:1;
+  pointer-events: auto;
+}
+.left{
+ width:60%;
+ background-color: rgba(0,0,0,0.7);
+}
+.right{
+  background-color: rgba(0,0,0,0.9);
+  width:40%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+}
+.spmenu ul{
+ padding:0;
+ list-style: none;
+}
+.spmenu li{
+  margin-bottom:12px;
+}
+.spmenu a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+h2{
+  font-family: Montserrat;
+  font-weight:ExtraBold;
+  color:#333333;
+}
+button{
+  background-color: black;
+  height:32px;
+  border:none;
+  width:145px;
+}
+button a{
+  text-decoration: none;
+  color:white;
+  width:100%;
+  line-height: 32px;
+  display: block;
+}
+.logo{
+  position:absolute;
+  top:32px;
+  left:32px;
+  z-index: 10;
+}
+.bar{
+  position:absolute;
+  top:32px;
+  right:32px;
+  z-index: 10;
+  cursor:pointer;
+}
+.bar:hover{
+ opacity:0.7;
+}
+.mainback{
+  height:100vh;
+  width:100%;
+  display:flex;
+}
+.white{
+  width:45%;
+  background-color: white;
+}
+.black{
+  width:55%;
+  background-color: #222222;
+}
+.mainvisual>div{
+  position: absolute;
+  top:15%;
+  right:15%;
+  z-index: 10;
+  color:white;
+}
+.mainvisual p{
+ font-size:20px;
+}
+.mainvisual h1{
+  margin:0;
+ font-size:70px;
+ line-height: 1em;
+}
+.mainvisual img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:73%;
+}
+.about{
+  position: relative;
+  width:75%;
+  height: 600px;
+  margin:0 auto;
+  transform: translateY(64px);
+  background-image: url('../img/about-img.png');
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.about>div{
+  padding:32px;
+  margin-left:24px;
+  width:63%;
+  background:rgba(255, 245, 245,0.9);
+}
+.about p{
+  margin-bottom:40px;
+  color:#333333;
+}
+.WC{
+  padding-top:100px;
+  padding-bottom:64px;
+  width:100%;
+  background-color: #F0F0F0;
+  z-index: -1;
+}
+.WC>div{
+  display:flex;
+  justify-content: space-between;
+  width:75%;
+  margin:0 auto;
+}
+.WC>div>div{
+  width:45%;
+}
+.WC img{
+  width:100%;
+}
+.topic{
+  width:75%;
+  margin:0 auto;
+  padding:48px 0;
+}
+.topic dl{
+  width:700px;
+  margin-left:auto;
+}
+.topic dt{
+  font-size: 10px;
+  color:rgb(170, 168, 168);
+}
+.topic dd{
+  margin-left:0;
+  margin-bottom:24px;
+  padding-bottom:5px;
+  border-bottom:1px solid rgb(170, 168, 168);
+  font-weight:bold;
+  font-size:15px;
+  color:rgb(39, 39, 39);
+}
+.topic button{
+  display: block;
+  margin-left:auto;
+}
+.contact{
+  background-color: #F0F0F0;
+  padding:64px 0;
+}
+.contact>div{
+  display:flex;
+  width:75%;
+  margin:64px auto;
+  margin-bottom:0;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+}
+.contact>div>div{
+  width:45%;
+}
+.contact img{
+  width:100%;
+}
+.contact p{
+  padding-bottom:24px;
+  color:#333333;
+}
+footer{
+  background-color: #525252;
+  text-align: center;
+  color:white;
+  padding:24px 0;
+  font-size:13px;
+}
+@media screen and (max-width:1025px){
+  .mainvisual img{
+    height:90%;
+    object-fit:cover;
+  }
+  .mainvisual>div{
+    top:30%;
+  }
+  .about{
+    height:500px;
+    width:100%;
+  }
+  .about>div{
+    margin:0 auto;
+    width:70%;
+  }
+  .WC{
+    padding-bottom:0;
+  }
+  .WC>div{
+    display:block;
+    width:90%;
+  }
+  .WC>div>div{
+    width:80%;
+    padding-bottom:64px;
+  }
+  .topic{
+    width:90%;
+  }
+  .topic dl{
+    width:100%;
+    margin-left:0;
+  }
+  .topic button{
+    margin-left:0;
+  }
+  .contact{
+    padding-top:32px;
+  }
+  .contact>div{
+    display:block;
+    width:90%;
+  }
+  .contact>div>div{
+    width:80%;
+  }
+  .left{
+    width:0;
+  }
+  .right{
+    width:100%;
+  }
+}
+
+@media screen and (max-width:500px){
+  .topic dd{
+    font-size:12px;
+  }
+ .logo{
+   width:170px;
+   left:16px;
+ }
+ .bar{
+   right:16px;
+ }
+ .mainvisual>div{
+   right:5%;
+ }
+ .mainvisual h1{
+   font-size:60px;
+ }
+ .mainvisual p{
+   font-size: 17px;
+ }
+ .about{
+   height:600px;
+ }
+ .WC>div{
+   width:100%;
+ }
+ .WC>div>div{
+  width:85%;
+  margin:0 auto;
+}
+.contact>div>div{
+  width:100%;
+}
+}
